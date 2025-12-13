@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LegalLens AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0f172a; /* Slate 900 */
+        color: #e2e8f0; /* Slate 200 */
+      }
+      /* Custom scrollbar for dark theme */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1e293b; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #475569; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #64748b; 
+      }
+      
+      .glass-panel {
+        background: rgba(30, 41, 59, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Print Styles for "Save as PDF" */
+      @media print {
+        @page {
+          margin: 15mm;
+          size: auto;
+        }
+
+        /* Reset Body */
+        body {
+          background-color: white !important;
+          color: black !important;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+          font-size: 12pt;
+        }
+
+        /* Hide UI Elements */
+        header, button, .no-print, .animate-spin, .fixed, nav {
+          display: none !important;
+        }
+
+        /* Disable Animations */
+        .animate-in {
+          animation: none !important;
+          opacity: 1 !important;
+          transform: none !important;
+        }
+
+        /* Container Resets */
+        #root, .container, .max-w-4xl, .max-w-3xl {
+          width: 100% !important;
+          max-width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: visible !important;
+        }
+
+        /* Component Styling Overrides */
+        .glass-panel {
+          background: white !important;
+          border: 1px solid #ddd !important;
+          box-shadow: none !important;
+          backdrop-filter: none !important;
+          color: black !important;
+          margin-bottom: 20px !important;
+          break-inside: avoid;
+        }
+
+        /* Text Color Inversion (Dark Mode -> Print) */
+        [class*="text-slate-"] { color: #334155 !important; } /* slate-700 */
+        [class*="text-white"] { color: #000 !important; }
+        
+        /* Semantic Colors */
+        [class*="text-red-"] { color: #b91c1c !important; } /* red-700 */
+        [class*="bg-red-"] { background-color: #fef2f2 !important; border-color: #fca5a5 !important; }
+        
+        [class*="text-green-"] { color: #15803d !important; } /* green-700 */
+        [class*="bg-green-"] { background-color: #f0fdf4 !important; border-color: #86efac !important; }
+        
+        [class*="text-yellow-"] { color: #a16207 !important; } /* yellow-700 */
+        [class*="bg-yellow-"] { background-color: #fefce8 !important; border-color: #fde047 !important; }
+
+        /* General Background Resets */
+        .bg-slate-900, .bg-slate-800, .bg-slate-900\/50 {
+           background-color: transparent !important;
+           border: none !important;
+        }
+        
+        /* Grid Adjustments */
+        .grid { display: block !important; }
+        .grid > div { margin-bottom: 15px !important; }
+        
+        /* Links */
+        a { text-decoration: underline; color: #2563eb !important; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "LegalLens AI",
+  "description": "A modern legal document analyzer that summarizes, identifies risks, and rates safety of Terms & Conditions, Privacy Policies, and Contracts using advanced AI.",
+  "requestFramePermissions": []
+}
