@@ -99,8 +99,8 @@ MCA Student | AI & Web Development Enthusiast
 
 # Run and deploy your AI Studio app
 
-This contains everything you need to run your app locally.
+This contains everything you need to run our app locally.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1VLFKQZFEVA8IcQzH_ReicYtthcVqbFSQ
+View our app in AI Studio: https://ai.studio/apps/drive/1VLFKQZFEVA8IcQzH_ReicYtthcVqbFSQ?fullscreenApplet=true
 
 
