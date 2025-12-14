@@ -48,9 +48,9 @@ Most users skip reading legal documents and blindly click **"Agree"**, often mis
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** 
-* **Backend:** 
-* **AI/NLP:** 
+* **Frontend:** Tailwind CSS, Lucide React, Inter Font
+* **Backend:** React 19, TypeScript
+* **AI/NLP:** Google GenAI SDK
 * **Text-to-Speech:** Audio summary generation
 * **Browser Extension:** Chrome Extension (Demo)
 
